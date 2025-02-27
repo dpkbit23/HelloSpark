@@ -1,0 +1,181 @@
+How to become a good Data Engineer
+
+Prerequisites 
+---------------------
+1. Programming fundamentals 
+2. SQL Basics
+
+You should learn the below things
+--------------------------------------
+1. Distributed Computing Fundamentals
+2. Data Lake Concepts
+3. One data ingestion tool
+4. DWH concepts 
+5. One NOSQL Database (good to know not mandatory)
+6. In-memory computation using Apache Spark (pyspark)
+7. Structured Streaming with Kafka for real time data
+8. One of the Cloud - AWS/Azure/GCP (knowing multi cloud is a add on)
+10. Integration of various components
+11. One Scheduling/Monitoring tool 
+12. CICD for production readiness
+13. Do a couple of projects to get a good feel of it.
+
+If you are looking to learn AWS cloud then learn the below technologies
+
+EMR
+Redshift
+Athena
+Glue
+S3
+Lambda
+EC2
+
+If you are looking to learn Azure then try learning the below
+
+ADLS gen2
+Azure Databricks
+Azure Data Factory
+Synapse
+
+If you are having 8+ years experience then focus on -
+Performance Tuning Part & Design Aspects
+
+If you are targeting Top Product based companies then 
+Data Structures & Algorithm is also very important.
+Arrays, LinkedList & Trees should be good enough.
+
+Just to get confidence check a few mock interviews on my youtube channel and that should be the final level of confidence you need.
+
+Remember, don't just learn to prepare for interviews.
+your objective should be to effectively work on projects.
+
+So it's important to focus more on internals & this will be the best way to be interview ready also!
+
+If I am missing anything please feel free to add in comments.
+
+PS~ I follow similar roadmap in my Ultimate Big Data Program. New batch starting tomorrow. DM to know more.
+
+Here are 30 PySpark interview questions that will help you prepare for your next big interview in the data engineering field:
+
+1. Create a SparkSession in PySpark.
+2. What is an RDD, how are they from DataFrame? How do you create an RDD in PySpark?
+3. Explain the difference between narrow & wide transformations.
+4. What is lazy evaluation in PySpark?
+5. How do you remove duplicate rows from a PySpark DataFrame while keeping the latest record?
+6. How do you calculate the 7-day moving average of stock prices for each stock using PySpark window functions?
+7. What is the difference between select(), withColumn(), and selectExpr()?
+8. How do you handle missing values in PySpark?
+9. How will you improve the performance of long running queries/jobs in PySpark?
+10. How do you add a new column to an existing DataFrame?
+11. What is the difference between orderBy() & sort() in PySpark?
+12. How do you write a PySpark DataFrame to a CSV file?
+13. Explain the process of deploying PySpark applications in a production environment?
+14. What is the difference between DataFrame & Dataset in PySpark?
+15. Explain how PySpark handles schema inference when reading data.
+16. How do you optimize PySpark performance?
+17. What is the role of partitions in PySpark?
+18. How merge works in PySpark? How to handle SDC2 transformations on PySpark?
+19. What are PySpark’s window functions, and how do you use them?
+20. How do you implement structured streaming in PySpark?
+21. Explain how PySpark integrates with Hive and external databases
+22. Explain the difference between coalesce() & repartition().
+23. How do you handle skewed data in PySpark?
+24. What is a broadcast variable, and when should you use it?
+25. How does PySpark handle caching & persistence?
+26. Explain the role of PySpark’s Catalyst optimizer.
+27. Explain the concept of watermarking in PySpark streaming.
+28. How do you implement UDFs in PySpark?
+29. How do you debug PySpark jobs?
+30. How to read JSON data using PySpark and write it into a data frame? How to use the explode() function in PySpark?
+
+
+𝐃𝐞𝐥𝐨𝐢𝐭𝐭𝐞 𝐢𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 𝐟𝐨𝐫 𝐃𝐚𝐭𝐚 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫 𝟐𝟎𝟐𝟒.
+
+1. Can you explain your project flow and architecture?
+2. What is the default file format used in Spark?
+3. Why is Parquet commonly used in Spark?
+4. What optimization techniques have you implemented in your projects?
+5. Can you explain the difference between `groupByKey` and `reduceByKey` in Spark? Which one is more efficient?
+6. What do you understand by rack awareness in Hadoop?
+7. What file formats do you typically use in your data processing workflows?
+8. How does fault tolerance work in Spark?
+9. How would you handle and ignore null values while loading data?
+10. How would you find the 3rd highest salary in a dataset?
+11. Given a dataset with positive and negative invoice values, how would you convert the positive values to negative while keeping the negative values unchanged?
+12. How can you convert a date like "20/04/1963" to an integer format?
+13. Given a dataset containing alphanumeric values and integers, how would you extract specific alphanumeric sequences like "ML," "GM," and "LTR" and create a new DataFrame to view only these sequences in Spark?
+14. What kind of questions have you encountered related to data modeling in your projects?
+
+
+spent the last 92 days to prepare the best data engineering interview experiences
+
+and here it is..
+
+100+ Interview Experiences with:
+
+𝗗𝗲𝘁𝗮𝗶𝗹𝗲𝗱 𝗶𝗻𝗳𝗼 𝗼𝗻 𝗮𝗹𝗹 𝗶𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗿𝗼𝘂𝗻𝗱𝘀, 𝗶𝗻𝗰𝗹𝘂𝗱𝗶𝗻𝗴
+
+- Screening round
+- Technical round
+- System Design round
+- Behavioral round
+- HR round
+
+𝗧𝘆𝗽𝗲𝘀 𝗼𝗳 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀 𝗶𝗻𝗰𝗹𝘂𝗱𝗲𝗱:
+
+- Theoretical questions
+- Scenario-based questions
+- Coding challenges with solutions
+- System design questions focusing on data pipelines, architecture, and scalability
+- SQL queries frequently asked in interviews
+- PySpark coding tasks used in real interviews
+- Cloud related questions.(aws/azure/gcp)
+
+𝗚𝗲𝘁 𝘁𝗵𝗲𝘀𝗲 𝟭𝟬𝟬+ 𝗶𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗘𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲𝘀 𝗛𝗲𝗿𝗲 - https://lnkd.in/giY6RZu2
+
+𝗨𝘀𝗲 𝗰𝗼𝗱𝗲 𝗗𝗔𝗧𝗔𝟭𝟬 𝗳𝗼𝗿 𝟭𝟬% 𝗼𝗳𝗳 – 𝗼𝗻𝗹𝘆 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗻𝗲𝘅𝘁 𝗳𝗲𝘄 𝘂𝘀𝗲𝗿𝘀!
+
+𝗧𝘆𝗽𝗲𝘀 𝗼𝗳 𝗰𝗼𝗺𝗽𝗮𝗻𝗶𝗲𝘀 𝗶𝗻𝗰𝗹𝘂𝗱𝗲𝗱 -
+
+1. MAANG
+2. Product-Based Companies
+3. Service-Based Companies
+4. Data Analytics Companies
+5. BFSI
+6. BIG4
+7. Big Firms
+
+𝗖𝗵𝗲𝗰𝗸𝗼𝘂𝘁 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝗲𝗱 𝗜𝗻𝗳𝗼 𝗵𝗲𝗿𝗲 - https://lnkd.in/giY6RZu2
+
+Follow
+𝗔𝗺𝗲𝗿𝗶𝗰𝗮𝗻 𝗘𝘅𝗽𝗿𝗲𝘀𝘀 𝗣𝘆𝘀𝗽𝗮𝗿𝗸 𝗶𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀 𝗳𝗼𝗿 𝗗𝗮𝘁𝗮 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿 𝟮𝟬𝟮𝟱.
+
+1. Describe a situation where your PySpark job failed due to data corruption. How did you identify the issue, and what steps did you take to reprocess the affected data?
+
+2. You're tasked with joining two large datasets in PySpark, but the operation is slow. What strategies would you employ to optimize the join performance?
+
+3. How would you manage schema evolution in PySpark when processing data from a source that occasionally adds new columns?
+
+4. Explain how you would set up a PySpark Streaming application to process real-time transaction data, ensuring low latency and fault tolerance.
+
+5. While aggregating user activity logs, you notice data skew causing performance bottlenecks. How would you address this issue in PySpark?
+
+6. Which serialization formats would you choose for storing intermediate data in PySpark to balance between speed and storage efficiency, and why?
+
+7. During data transformation, you encounter numerous null values in critical columns. What techniques in PySpark would you use to handle them appropriately?
+
+8. How would you design a partitioning strategy in PySpark for a dataset with time-series data to optimize query performance?
+
+9. In what scenarios would you use broadcast variables in PySpark, and how do they improve performance?
+
+10. Why is checkpointing important in PySpark Streaming, and how would you implement it?
+
+11. You're required to process a massive single file that doesn't fit into memory. What approach would you take in PySpark to handle this efficiently?
+
+12. Describe your approach to debugging a PySpark application that produces incorrect results without throwing errors.
+
+13. How would you integrate PySpark with Hive to perform SQL queries on existing Hive tables?
+
+14. Processing numerous small files can lead to inefficiencies. What strategies would you implement in PySpark to mitigate the small files problem?
+
+15. Provide an example of how you've used accumulators in PySpark to collect metrics during job execution.
