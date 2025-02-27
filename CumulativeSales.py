@@ -42,3 +42,24 @@ if __name__ == "__main__":
     diff_df.show()
     diff_df.write.json("Output/CumulativeSales.json", mode="overwrite")
 
+    #output
+    '''
+        +----+------+-------+-----+-------+---------+---------+
+        |Rank|Region|  Month|Sales|prevMon|Cum_Sales|DiffSales|
+        +----+------+-------+-----+-------+---------+---------+
+        |   1|  East|January|  200|   NULL|      200|        0|
+        |   2|  East|    Feb|  300|    200|      500|      100|
+        |   3|  East|    Mar|  250|    300|      750|      -50|
+        |   1| North|    Jan|  300|   NULL|      300|        0|
+        |   2| North|    Feb|  300|    300|      600|        0|
+        |   3| North|    Mar|  270|    300|      870|      -30|
+        |   1| South|  April|  650|   NULL|      650|        0|
+        |   2| South|    Jan|  500|    650|     1150|     -150|
+        |   3| South|    Feb|  750|    500|     1900|      250|
+        |   4| South|    Mar|  650|    750|     2550|     -100|
+        |   1|  West|    Jan|  400|   NULL|      400|        0|
+        |   2|  West|    Feb|  350|    400|      750|      -50|
+        |   3|  West|    Mar|  450|    350|     1200|      100|
+        +----+------+-------+-----+-------+---------+---------+
+    '''
+
