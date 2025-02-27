@@ -25,8 +25,8 @@ if __name__ == "__main__":
 
     # Sample Data with Unexpected Columns
     json_data = [
-        {"id": 1, "name": "Alice", "age": "30", "city": "New York"},
-        {"id": 2, "name": "Bob", "gender": "Male", "country": "USA"}
+        {"id": 1, "name": "John", "age": "30", "city": "New York"},
+        {"id": 2, "name": "Steve", "gender": "Male", "country": "USA"}
     ]
 
     # Convert to DataFrame without enforcing schema (to retain all columns)
