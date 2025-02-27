@@ -9,3 +9,8 @@ if __name__ == '__main__':
     number = int(input('Enter a number: '))
     result = digital_root(number)
     print(f"the digital root of {number} is {result}")
+
+    '''
+        Enter a number: 123456
+        the digital root of 123456 is 3
+    '''
