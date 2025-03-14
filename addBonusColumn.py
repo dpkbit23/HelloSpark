@@ -21,7 +21,14 @@ if __name__ == "__main__":
 
     df_second_sal = df_sal.withColumn("rank", dense_rank().over(window_spec))
     df_second_sal.show()
-    df_second_sal.filter((col("rank") == 2) | (col("rank") == 1)).show()
+    df1 = df_second_sal.filter((col("rank") == 2) | (col("rank") == 1)).orderBy(col("Dept"),col("rank").desc())
+    df1.show()
+    window_spec1 = Window.partitionBy(col("dept")).orderBy(col("rank").desc())
+    df2 = df1.withColumn("secSal", dense_rank().over(window_spec1))
+    df2.show()
+    df3 = df2.filter(col("secSal") == 1 )
+    df3.select("EmpID","EmpName","Dept","Salary","DoJ").show()
+
     '''df = df_second_sal.filter((col("rank") == 2) |
            ((col("rank") == 1) & (~df_second_sal.Dept.isin(
                df_second_sal.filter(col("rank") == 2).select(col("Dept")).rdd.flatMap(
@@ -61,4 +68,27 @@ if __name__ == "__main__":
 
     # Show Result
     df_second_highest.select("Name", "Department", "Salary").show()
+    '''
+
+    '''
+    Bonus
+    +-----+---------------+-------+------+----------+-------+
+    |EmpID|        EmpName|   Dept|Salary|       DoJ|  bonus|
+    +-----+---------------+-------+------+----------+-------+
+    |    1|       John Doe|     IT| 80000|2021-01-15|12000.0|
+    |    2|     Jane Smith|     HR| 70000|2010-05-22|10500.0|
+    |    3|   Robert Brown|     IT| 85000|2019-11-03|12750.0|
+    |    4|    Emily Davis|Finance| 90000|2022-07-19|13500.0|
+    |    5|Michael Johnson|     HR| 75000|2023-03-11|11250.0|
+    |    6|Michael Johnson|     HR| 76000|2023-03-11|11400.0|
+    +-----+---------------+-------+------+----------+-------+
+        
+    second highest salary of each dept, if 2nd does not exists then first highest salary
+    +-----+---------------+-------+------+----------+
+    |EmpID|        EmpName|   Dept|Salary|       DoJ|
+    +-----+---------------+-------+------+----------+
+    |    4|    Emily Davis|Finance| 90000|2022-07-19|
+    |    5|Michael Johnson|     HR| 75000|2023-03-11|
+    |    1|       John Doe|     IT| 80000|2021-01-15|
+    +-----+---------------+-------+------+----------+
     '''
