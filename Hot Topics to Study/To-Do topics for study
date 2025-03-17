@@ -29,6 +29,10 @@ Glue
 S3
 Lambda
 EC2
+stepfunction
+sns
+sqs
+iam
 
 If you are looking to learn Azure then try learning the below
 
@@ -179,3 +183,10 @@ Follow
 14. Processing numerous small files can lead to inefficiencies. What strategies would you implement in PySpark to mitigate the small files problem?
 
 15. Provide an example of how you've used accumulators in PySpark to collect metrics during job execution.
+
+
+LLMs
+Statistical analysis and machine learing algo - exp with data visualization tool
+NLP
+promt engi related to images videos
+open AI api mastery
