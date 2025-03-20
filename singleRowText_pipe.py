@@ -45,3 +45,18 @@ if __name__ == "__main__":
     # Show final output
     df_final.show(truncate=False)
 
+    '''
+    input
+    John|BE|12|BigData|Alice|Btech|11|AWS|Ama|MCA|14|Spark|Isla|ME|9|Cloud|Olivia|BE|11|SQL
+    
+    output
+    +------+-----+---+-------+
+    |Name  |Dept |Exp|Tech   |
+    +------+-----+---+-------+
+    |John  |BE   |12 |BigData|
+    |Alice |Btech|11 |AWS    |
+    |Ama   |MCA  |14 |Spark  |
+    |Isla  |ME   |9  |Cloud  |
+    |Olivia|BE   |11 |SQL    |
+    +------+-----+---+-------+
+    '''
