@@ -1,0 +1,1 @@
+John|BE|12|BigData|Alice|Btech|11|AWS|Ama|MCA|14|Spark|Isla|ME|9|Cloud|Olivia|BE|11|SQL
