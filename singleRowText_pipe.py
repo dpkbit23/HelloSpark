@@ -1,5 +1,5 @@
 from pyspark.sql import SparkSession, Window
-from pyspark.sql.functions import regexp_replace, split, explode, col, posexplode, row_number, expr, floor
+from pyspark.sql.functions import split, explode, col, posexplode, row_number, expr, floor
 
 if __name__ == "__main__":
     spark = SparkSession.builder.appName("singleRowText").master("local[*]").getOrCreate()
