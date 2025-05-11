@@ -21,11 +21,14 @@ if __name__ == "__main__":
 
     df_second_sal = df_sal.withColumn("rank", dense_rank().over(window_spec))
     df_second_sal.show()
+    #filter out rank 2 and 1 from the complete list
     df1 = df_second_sal.filter((col("rank") == 2) | (col("rank") == 1)).orderBy(col("Dept"),col("rank").desc())
     df1.show()
+    #again create a col to rank only 1st and 2nd salary in desc order so that rank 2 becomes rank 1
     window_spec1 = Window.partitionBy(col("dept")).orderBy(col("rank").desc())
     df2 = df1.withColumn("secSal", dense_rank().over(window_spec1))
     df2.show()
+    # filter rank 1 i.e 2nd rank after creating the rank second time
     df3 = df2.filter(col("secSal") == 1 )
     df3.select("EmpID","EmpName","Dept","Salary","DoJ").show()
 

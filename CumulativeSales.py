@@ -12,7 +12,7 @@ if __name__ == "__main__":
             ("West", "Feb", 350), ("West", "Mar", 450),
             ("North", "Jan", 300), ("North", "Feb", 300),
             ("North", "Mar", 270), ("South", "Jan", 500),
-            ("South", "Feb", 750), ("South", "Mar", 650),("South", "April", 650)
+            ("South", "Feb", 750), ("South", "Mar", 650),("South", "April", 659)
             ]
 
     columns = ["Region", "Month", "Sales"]
