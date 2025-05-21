@@ -22,6 +22,7 @@ if __name__ == "__main__":
     window_spec = Window.orderBy("turn")
 
     LastMan_df= df.withColumn("total_weight", sum("weight").over(window_spec))
+    LastMan_df.show()
     LastMan_df=  LastMan_df.filter(col("total_weight") <= 1000).orderBy(desc("total_weight")).limit(1).select("person_name")
     LastMan_df.show()
 
