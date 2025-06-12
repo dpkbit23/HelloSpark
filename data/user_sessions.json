@@ -1,0 +1,20 @@
+[
+  {
+    "session_id": "s1",
+    "user": {"id": "u1", "device": "android"},
+    "events": [{"event_type": "start", "timestamp": 1000}, {"event_type": "end", "timestamp": 2000}]
+  },
+  {
+    "session_id": "s2",
+    "user": {"id": "u2", "device": "ios"},
+    "events": [{"event_type": "end", "timestamp": 1500}, {"event_type": "start", "timestamp": 3000}]
+  },
+  {
+    "session_id": "s3",
+    "user": null,
+    "events": []
+  },
+  {
+    "malformed_record": "corrupt data"
+  }
+]

@@ -1,0 +1,6 @@
+{"user_id": 201, "session": {"start": "2025-05-20T12:00:00Z", "end": "2025-05-20T12:30:00Z"}, "device": "iOS"}
+{"user_id": 202, "session": {"start": "2025-05-20T13:00:00Z", "end": "2025-05-20T12:50:00Z"}, "device": "Android"}
+{"user_id": 203, "session": {"start": "2025-05-20T14:00:00Z"}, "device": "iOS"}
+{"user_id": 204, "session": "corrupt_entry", "device": "Android"}
+{"user_id": 205, "session": {"start": "invalid_date", "end": "2025-05-20T15:30:00Z"}, "device": "iOS"}
+{"user_id": 206, "session": {"start": "2025-05-20T15:00:00Z", "end": "2025-05-20T15:45:00Z"}, "device": "iOS"}

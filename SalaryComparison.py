@@ -25,6 +25,15 @@ if __name__ == "__main__":
     df_sal_comparison.show()
 
     '''
+    
+   # Get existing records that are not in the incoming dataset
+   not_in_incoming = df_current.filter("is_current = true").join(
+       df_incoming.select("customer_id"),
+       on="customer_id",
+       how="left_anti"
+   )
+   
+
         +-------+------+----+------+--------+-------+-----+
         |   Dept|emp_id|name|salary|  avgSal|SalDiff|Diff%|
         +-------+------+----+------+--------+-------+-----+

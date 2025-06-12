@@ -1,0 +1,7 @@
+id,customer,amount
+1001,Alice,250.75
+1002,,99.99
+,Charlie,120.00
+,Dan,180.50
+1005,Eve,invalid_amount
+1006,Frank,75.0
