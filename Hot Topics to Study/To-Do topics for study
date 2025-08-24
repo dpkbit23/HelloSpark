@@ -209,3 +209,37 @@ Gamma
 Need to create 5 linkedin posts for the month of December keeping the theme in mind - Leadership + New Year + christmas. I would be using my real case scenario pictures with each and every post capturing emotions. Plus add vulnerability in the posts
 
 Need to create 5 linkedin posts for the month of December keeping the theme in mind - Leadership + New Year + christmas. I would be using my real case scenario pictures with each and every post capturing emotions. Plus add vulnerability in the posts
+
+
+Here's a LinkedIn post drafted in simple technical language based on the provided content:
+
+---
+
+**Solving a Key Bottleneck in Apache Spark for Iterative ML & Streaming!**
+
+Apache Spark's fantastic for big data, but many of us have hit the "long-lineage bottleneck" in iterative machine learning and streaming applications.
+
+**The Problem:** Spark's lazy evaluation means it tracks RDD transformations (lineage) in a Dependency Directed Acyclic Graph (DAG) for fault tolerance and computation. However, in apps that run for many iterations or long periods, this DAG can grow huge, leading to significant slowdowns. We're talking about DAG construction overhead, massive communication, and repeated rebuilding of DAGs for recurring computations. For instance, matrix factorization can see execution time per iteration grow by nearly 8x over 8 iterations.
+
+While frequent checkpointing is a common workaround, it forces data to disk, which contradicts Spark's in-memory philosophy and adds extra work for developers.
+
+**The Solution:** Researchers Haoran Wang, Jinliang Wei, and Garth Gibson from Carnegie Mellon University & Vector Institute have proposed two smart optimisations to tackle this:
+
+1.  **Dependency DAG Caching:** This caches the DAGs in Spark's scheduler, so only new stages need to be built, drastically reducing construction time.
+2.  **Delta Dependency Broadcast:** Instead of sending the full lineage metadata, executors only receive the *new* dependencies, significantly cutting down network traffic.
+
+**The Impact:** Their experiments show impressive results:
+*   Per-iteration execution time becomes nearly constant, independent of lineage size.
+*   Driver communication volume is drastically reduced and remains constant (e.g., from 35GB down to 2GB per iteration for matrix factorization).
+*   They achieved speedups comparable to or even exceeding optimal checkpointing (e.g., 8.5x speedup for matrix factorization and a 16x speedup for a streaming application compared to no checkpointing).
+
+This research highlights a more elegant and efficient way to handle long-running Spark jobs, aligning better with Spark's core design principles.
+
+#ApacheSpark #BigData #MachineLearning #Streaming #PerformanceOptimization #DAG #RDD #DataEngineering
+
+expected_columns = ["col1", "col2", "col3"]
+for col in expected_columns:
+    if col not in df_source.columns:
+        df_source = df_source.withColumn(col, lit(None))
+
+
