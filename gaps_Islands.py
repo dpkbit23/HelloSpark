@@ -34,3 +34,13 @@ if __name__ == "__main__":
     )
     result_df = df4.groupBy("student_id", "group_id").agg(F.min("Attendance_dt").alias("Start_date"), F.max("Attendance_dt").alias("End_date"), F.count("*").alias("Consecutiove_days")).orderBy("Student_id","Start_date")   #select("student_id",)
     result_df.show()
+
+    '''
+    +----------+--------+----------+----------+-----------------+
+    |student_id|group_id|Start_date|  End_date|Consecutiove_days|
+    +----------+--------+----------+----------+-----------------+
+    |       101|       0|2025-01-01|2025-01-02|                2|
+    |       101|       1|2025-01-04|2025-01-06|                3|
+    |       102|       0|2025-01-02|2025-01-03|                2|
+    +----------+--------+----------+----------+-----------------+
+    '''
