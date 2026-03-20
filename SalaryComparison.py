@@ -1,5 +1,5 @@
-from pyspark.sql import SparkSession
-from pyspark.sql.functions import avg, col, round
+from pyspark.sql import SparkSession, Window
+from pyspark.sql.functions import avg, col, round, dense_rank
 
 if __name__ == "__main__":
     spark = SparkSession.builder.master("local[*]").appName("salaryComparison").getOrCreate()
@@ -18,11 +18,19 @@ if __name__ == "__main__":
     df_avg_sal = df.groupBy("dept").agg(avg("salary").alias("avgSal"))
 
     df_sal_join = df.join(df_avg_sal, on="dept", how="inner")
+    df.join(df_avg_sal, on="dept", how="inner").explain("extended")
+    spark.conf.set("spark.sql.adaptive.enabled", "true")
+    spark.conf.set("spark.sql.adaptive.skewJoin.enabled", "true")
     df_sal_comparison = (df_sal_join.withColumn("SalDiff", col("avgSal") - col("salary"))
                          .withColumn("Diff%", round((col("SalDiff")/ col("salary"))*100, 2)))
     df.show()
     df_avg_sal.show()
     df_sal_comparison.show()
+
+    window_spec = Window.partitionBy("Dept").orderBy(col("salary").desc())
+    df_high_sal = df.withColumn("rank", dense_rank().over(window_spec))
+    df_sec_high_sal = df_high_sal.filter(col("rank")==2)
+    df_sec_high_sal.show()
 
     '''
     
