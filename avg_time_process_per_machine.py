@@ -23,3 +23,12 @@ if __name__ == "__main__":
     df_time = df_pair.withColumn("processing_time", col("end_time") - col("start_time"))
     df_result = df_time.groupBy("machine_id").agg(round(avg("processing_time"),3).alias("processing_time"))
     df_result.show()
+
+    '''
+    +----------+---------------+
+    |machine_id|processing_time|
+    +----------+---------------+
+    |         0|         11.205|
+    |         1|         61.843|
+    +----------+---------------+
+    '''
