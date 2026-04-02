@@ -22,7 +22,20 @@ if __name__ == "__main__":
     df_pair = activity_df.groupBy(col("machine_id"),col("process_id")).agg(Fmax("start_time").alias("start_time"), Fmin("end_time").alias("end_time"))
     df_time = df_pair.withColumn("processing_time", col("end_time") - col("start_time"))
     df_result = df_time.groupBy("machine_id").agg(round(avg("processing_time"),3).alias("processing_time"))
-    df_result.show()
+    df_result.show(2,vertical=True)
+
+    data = [("hello pyspark",),("spark",)]
+    df  = spark.createDataFrame(data,["text"])
+    df.show()
+    input("press any key to continue")
+
+    empCount_df = df.groupBy("Dept").count()
+    empCount_df.show()
+    empAvgSal_df = df.groupBy("Dept").agg(avg("Salary").alias("AvgSalary"))
+    empAvgSal_df.show()
+
+    empDoJ_df = df.filter((col("Dept") == "HR") & (col("DoJ") > "2020-01-01"))
+    empDoJ_df.show()
 
     '''
     +----------+---------------+

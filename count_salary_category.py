@@ -18,5 +18,15 @@ if __name__ == "__main__":
 
     df_final = df_category.join(df_allCategory, on="category", how="rightouter")
     #df_final.select("category",count("category")).groupBy("category")
-    df_final=df_final.groupBy("category").agg(count("account_id")).alias("count")
+    df_final=df_final.groupBy("category").agg(count("account_id").alias("count"))
     df_final.show()
+
+    '''
+    +--------------+-----+
+    |      category|count|
+    +--------------+-----+
+    |    Low Salary|    1|
+    |Average Salary|    0|
+    |   High Salary|    3|
+    +--------------+-----+
+    '''
