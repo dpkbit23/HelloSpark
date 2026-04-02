@@ -15,3 +15,17 @@ if __name__ == "__main__":
     emp_manager_df = e.join(m, col('m.empId')==col('e.manager'), how='left' ).join(sm, col('m.manager')==col('sm.empId'), how='left')
     emp_manager_df.select(col('e.empId').alias('employeeId'), col('e.name').alias('employee'), col('m.name').alias('Manager'), col('sm.name').alias('Senior_Manager')).show()
     sql_df.show()
+
+'''
++----------+--------+-------+--------------+
+|employeeId|employee|Manager|Senior_Manager|
++----------+--------+-------+--------------+
+|         1|       A|      B|          NULL|
+|         2|       B|   NULL|          NULL|
+|         4|       D|      B|          NULL|
+|         3|       C|      A|             B|
+|         5|       E|      A|             B|
++----------+--------+-------+--------------+
+
+
+'''
