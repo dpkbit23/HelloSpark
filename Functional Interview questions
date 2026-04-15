@@ -1,0 +1,29 @@
+1. **What is the role of a lead data engineer?**  
+   A lead data engineer is responsible for overseeing the data engineering team, ensuring the architecture and infrastructure of data systems is robust, and guiding the technical direction of the projects. They collaborate with data analysts and data scientists to understand data needs and optimize data pipelines.  
+
+2. **What experience do you have with data architecture?**  
+   I have extensive experience in designing and implementing data architectures that support both operational and analytical workloads. This includes using cloud-based solutions like AWS, Azure, and Google Cloud. I've built data lakes and data warehouses that ensure high availability and scalability.  
+
+3. **Can you explain ETL and ELT processes?**  
+   ETL (Extract, Transform, Load) is a process where data is extracted from various sources, transformed into a format suitable for analysis, and then loaded into a data warehouse. ELT (Extract, Load, Transform) is a variation where data is first loaded into a data lake and transformations are applied afterwards, allowing for more flexibility in handling large amounts of data.  
+
+4. **How do you ensure data quality in your pipelines?**  
+   Ensuring data quality involves implementing data validation, profiling, and cleansing processes at various stages of the pipeline. I also utilize automated tests to continuously monitor data integrity and accuracy.  
+
+5. **What tools do you prefer for data pipeline orchestration?**  
+   I prefer tools like Apache Airflow for data pipeline orchestration due to its flexibility and support for complex workflows. Other tools like Luigi and Prefect also offer good alternatives depending on project requirements.  
+
+6. **How do you handle big data processing?**  
+   I utilize frameworks like Apache Spark and Hadoop for processing big data. These technologies allow us to efficiently handle large datasets by distributing processing tasks across multiple nodes, thus achieving higher performance and scalability.  
+
+7. **What experience do you have with cloud data services?**  
+   I have hands-on experience with cloud data services, including AWS Redshift, Google BigQuery, and Azure Data Lake. I am proficient in designing solutions that leverage cloud services for data storage, processing, and analytics, ensuring cost-effectiveness and scalability.  
+
+8. **Explain a challenging data engineering project you've worked on.**  
+   In a previous role, I led a project to migrate a monolithic data infrastructure to a microservices architecture, which involved significant design changes and the adoption of several new technologies. This required comprehensive planning, team collaboration, and testing to ensure a smooth transition without loss of data integrity.  
+
+9. **How do you approach collaboration with data scientists and analysts?**  
+   I believe in maintaining open lines of communication with data scientists and analysts by regularly meeting to understand their requirements. Collaboration on data definitions, pipeline requirements, and sharing of insights helps align our goals and ensures that the data needs are met effectively.  
+
+10. **What are some best practices you follow in data engineering?**  
+   Some best practices include automation of data pipelines, documentation of data flows and architecture, code reviews for quality assurance, and regular monitoring of data systems. I also encourage implementing CI/CD for data engineering to streamline updates and deployments.
