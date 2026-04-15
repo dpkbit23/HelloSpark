@@ -1,0 +1,32 @@
+SQL Questions:
+
+* How do you calculate transaction volume for a merchant?
+* Calculate Daily Cumulative Balance for merchant?
+* Fetch out Top 3 geographies with highest customer base?
+* How do you optimize a slow SQL query?
+
+Spark Questions:
+
+* How do you handle Fault Tolerance using Spark?
+* What is the difference between Job, Stage and Task? How Spark decides number of tasks per stage?
+* What is difference between Broadcast Join vs Sort Merge Join?
+* Give example of how do you detect, Data Skew in a set of payment transactions?
+
+Project Related Questions:
+
+* Give a brief about your last project. Explain architecture?
+* What was the data volume you were handling? How did you optimize it?
+* Which part of pipeline were you handling solely?
+* Can you redesign your project using latest Databricks tools?
+* What was the design layout of your tables?
+
+System Design Questions:
+
+* Design a system which is capable of handling millions of transactions every second?
+* Design a fraud detection pipeline which functions in real time?
+
+Managerial Questions:
+
+* What motivates you to join a fintech giant?
+* If you are asked to handle a real time end to end pipeline, for which part will you need an external help?
+* Which role do you see yourself in, after 3 years, if you get selected?
