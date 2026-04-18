@@ -1,0 +1,78 @@
+interview Questions asked in Databricks for Senior Technical Data Engineer role
+
+Interview Rounds:
+
+6 rounds of interview (3 Tech rounds + Live Coding Round + Executive Round + Director Round)
+
+Focus areas:
+
+- Spark internals (DAGs, shuffles, executors, partitions)
+- Issue Identification (Spark UI, logs, and metrics)
+- Databricks architecture
+- Practical Support Scenarios
+
+1) Project & Architecture
+
+* Explain your end-to-end project architecture using Databricks
+* Describe Medallion Architecture (Bronze → Silver → Gold)
+* Clearly explain data flow and design decisions
+
+2) Spark Internals
+
+* Driver vs Executor roles 
+* Execution flow: Jobs -> Stages -> Tasks 
+* DAG creation and task execution 
+* Memory management and JVM GC behaviour 
+* Interpret GC logs and identify memory pressure issues 
+
+3) Performance Tuning & Troubleshooting
+
+* Data skew & shuffle handling 
+* Broadcast joins vs shuffle joins 
+* Handling OOM (Out Of Memory) errors 
+* Spark UI (Jobs, Stages, SQL tabs) 
+* Logs, metrics 
+* Cache vs Broadcast 
+* UDF vs native functions (performance impact) 
+
+4) Spark Structured Streaming
+
+* Checkpointing (offsets, state, metadata) 
+* Watermarking & late data handling 
+* State management across micro-batches 
+* Debug issues (OOM errors, Skewed partitions, Slow streaming jobs)
+
+5) Delta Lake & File Formats
+
+* ACID transactions 
+* delta_log metadata 
+* Time travel & retention 
+* Optimistic concurrency control
+* Operations (Merge, Incremental loads, Vacuum & file cleanup)
+* Compare Parquet vs Avro vs Delta vs Iceberg
+
+6) SQL & Analytical Processing
+
+* FROM -> JOIN -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
+* Joins & aggregations
+* Window/analytical functions
+
+7) Data Modeling & File Design
+
+* Row vs Columnar formats (Parquet, ORC, Avro)
+* Best practices for Partitioning & bucketing
+
+8) Databricks Platform & Cluster Management
+
+* Cluster types (job vs all-purpose)
+* Autoscaling & VM sizing
+* Driver vs Worker nodes
+* Managed vs External tables
+* Init scripts
+
+9) Practical Scenarios (Most Important)
+
+* How do you Break down pipeline into Jobs -> Stages -> Tasks 
+* How to Debug slow Spark jobs using Spark UI
+* Ways to handle Data skew, OOM errors and Streaming failures
+* Brief about Spark 3.0 features (Adaptive Query Execution and Auto skew handling)
