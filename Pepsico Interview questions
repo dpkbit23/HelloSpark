@@ -1,0 +1,25 @@
+𝗥𝗼𝘂𝗻𝗱 𝟭 – 𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝟭 (𝗦𝗤𝗟 | 𝗣𝘆𝘁𝗵𝗼𝗻 | 𝗘𝗧𝗟)
+1 Top 3 highest salary per department (SQL)
+ 2 CTE vs Subquery with use cases
+ 3 Handling NULL values in ETL pipeline
+ 4 Python script for Read → Transform → Load
+ 5 Normalization vs Denormalization (real scenario)
+ 6 SQL query optimization techniques
+
+𝗥𝗼𝘂𝗻𝗱 𝟮 – 𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝟮 (𝗔𝗗𝗙 | 𝗔𝘇𝘂𝗿𝗲 | 𝗗𝗮𝘁𝗮𝗯𝗿𝗶𝗰𝗸𝘀)
+1 Design ingestion pipeline from multiple sources
+ 2 Incremental load vs Full load
+ 3 Partitioning vs Bucketing in Spark
+ 4 Delta Lake Time Travel / Versioning
+ 5 Pipeline retry & failure handling in ADF
+ 6 Databricks performance tuning
+ 7 Schedule trigger vs Tumbling window trigger
+ 8 Derived Column vs Select transformation
+ 9 Optimization techniques used in current project
+
+𝗥𝗼𝘂𝗻𝗱 𝟯 – 𝗠𝗮𝗻𝗮𝗴𝗲𝗿𝗶𝗮𝗹 / 𝗕𝗲𝗵𝗮𝘃𝗶𝗼𝗿𝗮𝗹
+1 Explain end-to-end pipeline you built
+ 2 Handling multiple stakeholders
+ 3 Debugging production issue
+ 4 Ensuring data accuracy & consistency
+ 5 Working under tight deadlines
